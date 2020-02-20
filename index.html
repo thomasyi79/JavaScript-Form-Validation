@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script>
+            function validateForm() {
+                var x = document.forms["signUpForm"]["fname"].value;
+                    if (x == "") {
+                    alert("First Name Must be Filled Out");
+                    return false;
+                    }
+                var y = document.forms["signUpForm"]["lname"].value;
+                    if (y == "") {
+                    alert("Last Name Must be Filled Out");
+                    return false;
+                    }
+                var z = document.forms["signUpForm"]["emailField"].value;
+                    if (z == "") {
+                    alert("Email Field Must be Filled Out");
+                    return false;
+                    }
+            }
+        </script>
+    </head>
+    <!-- Form HTML Starts-->
+    <body>
+        <row id="rowone" style="text-align:center;">
+            <div id="registrationform">
+                <form name="signUpForm" id="signUpForm" onsubmit="return validateForm()" method="post">
+                    <h1> Customer Information </h1>
+                    <h3 style="margin-bottom:25px;"> Registration Form: Please Enter the Following Fields.</h3>
+                    First Name: <input type="text" id="fname">
+                    <br />
+                    Last Name: <input type="text" id="lname">
+                    <br />
+                    Email: <input type="email" id="emailField">
+                    <br />
+                  <button id="submitbutton" style="color:white; background-color:black; margin-top:20px; width:75px; height:35px;" enabled>Submit</button>
+                </form>
+            </div>
+        </row>
+    <!-- End of Form Script and HTML -->
+    </body>
+</html>

@@ -1,0 +1,25 @@
+body {
+    background-color:black;
+    background-repeat: cover;
+}
+form#signUpForm {
+    padding-top:50px;
+    padding-bottom: 25px;
+    padding-left:-25px;
+    padding-right:-25px;
+    margin-top:285px;
+    margin-left:380px;
+    text-align:center;
+    background-color:white;
+    color:black;
+    width:50%;
+}
+#fname {
+    margin-bottom:15px;
+}
+#lname {
+    margin-bottom:10px;
+}
+#emailField {
+    margin-top:10px;
+}
